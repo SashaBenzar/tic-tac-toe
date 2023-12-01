@@ -1,0 +1,120 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.ttt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.ttt__players {
+  display: flex;
+  gap: 40px;
+}
+.ttt__player-info {
+  font-size: 20px;
+  font-weight: 600;
+}
+.ttt__options {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 18px;
+}
+.ttt__restart {
+  margin: 0 10px 0 0;
+}
+.ttt__selector {
+  width: 50px;
+}
+.ttt__board {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.ttt__cell {
+  width: 50px;
+  height: 50px;
+  border: #000 1px solid;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+}
+
+.ttt__cell.red {
+  background-color: red;
+}
+
+.ttt__cell.green {
+  background-color: green;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.9);
+}
+.modal__container {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.modal__text {
+  font-size: 32px;
+  text-align: center;
+  margin: 20px;
+}
+
+.ttt__new-game {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 32px;
+  font-size: 18px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e7e7e7;
+  color: black;
+}
+
+select {
+  height: 45px;
+  border: 2px solid black;
+  font-size: 18px;
+}
